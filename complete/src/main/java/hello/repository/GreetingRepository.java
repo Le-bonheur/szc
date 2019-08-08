@@ -7,6 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.SqlOutParameter;
 import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -49,9 +50,10 @@ public class GreetingRepository {
         Map<String, Object> map = jdbcTemplate.call(conn -> {
             String sql = "{CALL DEV.QRY_PID_01(?)}";
             CallableStatement prepareCall = conn.prepareCall(sql);
-            prepareCall.registerOutParameter(1, Types.VARCHAR);
+            prepareCall.registerOutParameter(1, Types.NVARCHAR);
             return prepareCall;
-        }, SqlParameter.sqlTypesToAnonymousParameterList(OracleTypes.VARCHAR));
+        }, Arrays.asList(new SqlParameter(new SqlOutParameter("o_Pid", Types.NVARCHAR))));
+        //SqlParameter.sqlTypesToAnonymousParameterList(OracleTypes.VARCHAR)
         System.out.println(map);
 //        return jdbcTemplate.query("CALL DEV.QRY_PID_01(?)",
 //                (rs, rowNum) -> new String(Base64.getDecoder().decode(rs.getString("CBI_CLT_PID")), Charsets.UTF_8)
