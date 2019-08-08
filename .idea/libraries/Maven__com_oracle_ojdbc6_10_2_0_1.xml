@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/10.2.0.1/ojdbc6-10.2.0.1-sources.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/10.2.0.1" />
     </SOURCES>
   </library>
 </component>

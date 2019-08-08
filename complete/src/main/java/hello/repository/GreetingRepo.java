@@ -1,7 +1,7 @@
 //package hello;
 //
-//import org.springframework.data.jpa.repository.Query;
-//import org.springframework.data.repository.CrudRepository;
+//import org.springframework.data.jpa.hello.repository.Query;
+//import org.springframework.data.hello.repository.CrudRepository;
 //
 //import java.util.List;
 //

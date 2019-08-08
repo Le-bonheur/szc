@@ -1,4 +1,4 @@
-package hello;
+package hello.entity;
 
 public class Greeting {
 

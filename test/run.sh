@@ -22,7 +22,7 @@ mvn clean package
 #   then 
 #     curl https://raw.githubusercontent.com/timkay/aws/master/aws -o aws
 #     chmod u+x aws
-#     ./aws put --progress "x-amz-acl: public-read" springio-guides/gs-rest-service-0.1.0.jar target/gs-rest-service-0.1.0.jar
+#     ./aws put --progress "x-amz-acl: public-read" springio-guides/gs-rest-hello.service-0.1.0.jar target/gs-rest-hello.service-0.1.0.jar
 # fi
 
 rm -rf target

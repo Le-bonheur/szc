@@ -1,4 +1,4 @@
-   All code in this repository is:
+   All code in this hello.repository is:
    =======================================================================
    Copyright (c) 2013 GoPivotal, Inc. All Rights Reserved
 
