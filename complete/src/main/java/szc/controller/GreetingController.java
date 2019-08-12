@@ -1,15 +1,13 @@
-package hello.controller;
+package szc.controller;
 
-import java.nio.charset.Charset;
-import java.util.Arrays;
 import java.util.Base64;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-import hello.entity.Greeting;
+import szc.entity.Greeting;
+import net.sf.json.JSONArray;
 import org.apache.commons.codec.Charsets;
 import org.springframework.web.bind.annotation.*;
-import hello.repository.GreetingRepository;
+import szc.repository.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
@@ -32,7 +30,7 @@ public class GreetingController {
     }
 
     @GetMapping("/getPidList")
-    public List<String> getPidList() {
+    public JSONArray getPidList() {
         return greetingRepository.getPidListSP();
     }
 

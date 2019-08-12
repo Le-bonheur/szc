@@ -1,8 +1,8 @@
 ---
 applications:
-- name: gs-rest-hello.service
+- name: gs-rest-szc.service
   memory: 256M
   instances: 1
-  host: rest-hello.service
+  host: rest-szc.service
   domain: guides.spring.io
-  path: build/libs/gs-rest-hello.service-0.1.0.jar
+  path: build/libs/gs-rest-szc.service-0.1.0.jar

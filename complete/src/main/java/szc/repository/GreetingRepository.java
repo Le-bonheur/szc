@@ -1,24 +1,17 @@
-package hello.repository;
+package szc.repository;
 
-import hello.entity.User;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import oracle.jdbc.OracleTypes;
 import org.apache.commons.codec.Charsets;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.SqlOutParameter;
-import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.UnsupportedEncodingException;
 import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Types;
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Component
 public class GreetingRepository {
@@ -46,18 +39,29 @@ public class GreetingRepository {
         );
     }
 
-    public List<String> getPidListSP() {
+    public JSONArray getPidListSP() {
         Map<String, Object> map = jdbcTemplate.call(conn -> {
             String sql = "{CALL DEV.QRY_PID_01(?)}";
             CallableStatement prepareCall = conn.prepareCall(sql);
-            prepareCall.registerOutParameter(1, Types.NVARCHAR);
+            prepareCall.registerOutParameter(1, OracleTypes.CURSOR);
             return prepareCall;
-        }, Arrays.asList(new SqlParameter(new SqlOutParameter("o_Pid", Types.NVARCHAR))));
-        //SqlParameter.sqlTypesToAnonymousParameterList(OracleTypes.VARCHAR)
+        }, Collections.singletonList(new SqlOutParameter("pid_list", OracleTypes.CURSOR)));
+
         System.out.println(map);
-//        return jdbcTemplate.query("CALL DEV.QRY_PID_01(?)",
-//                (rs, rowNum) -> new String(Base64.getDecoder().decode(rs.getString("CBI_CLT_PID")), Charsets.UTF_8)
-//        );
-        return null;
+
+        JSONArray jsonArray = JSONArray.fromObject(map.get("pid_list"));
+
+        for (int i = 0; i < jsonArray.size(); i++) {
+            JSONObject jsonObject = JSONObject.fromObject(jsonArray.get(i));
+
+            String pid = jsonObject.getString("PID");
+            //Base64解码
+            jsonObject.put("PID", new String(Base64.getDecoder().decode(pid), Charsets.UTF_8));
+
+            jsonArray.set(i, jsonObject);
+        }
+        System.out.println(jsonArray);
+
+        return jsonArray;
     }
 }

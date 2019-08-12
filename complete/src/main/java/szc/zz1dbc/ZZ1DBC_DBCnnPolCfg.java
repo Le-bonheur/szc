@@ -1,4 +1,4 @@
-package hello.zz1dbc;
+package szc.zz1dbc;
 
 public class ZZ1DBC_DBCnnPolCfg {
 

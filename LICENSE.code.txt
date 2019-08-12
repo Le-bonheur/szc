@@ -1,4 +1,4 @@
-   All code in this hello.repository is:
+   All code in this szc.repository is:
    =======================================================================
    Copyright (c) 2013 GoPivotal, Inc. All Rights Reserved
 

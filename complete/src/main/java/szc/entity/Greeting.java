@@ -1,4 +1,4 @@
-package hello.entity;
+package szc.entity;
 
 public class Greeting {
 
