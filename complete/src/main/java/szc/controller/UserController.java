@@ -20,6 +20,10 @@ public class UserController {
         this.userService = userService;
     }
 
+    /**
+     * @param code 登录凭证
+     * @return openId
+     */
     @PostMapping(path = "/getOpenIdByCode")
     public @ResponseBody
     String getOpenIdByCode(@RequestParam String code) {
@@ -31,6 +35,12 @@ public class UserController {
         return null;
     }
 
+    /**
+     * @param encryptedData 加密数据
+     * @param iv 算法初始向量
+     * @param openId openId
+     * @return jsonObject
+     */
     @ResponseBody
     @PostMapping(value = "/decodeUserInfo")
     public JSONObject decodeUserInfo(String encryptedData, String iv, String openId) {

@@ -8,6 +8,9 @@ import szc.repository.UserRepository;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Lebonheur
+ */
 @Service
 public class GetUserInfo {
 
@@ -28,16 +31,46 @@ public class GetUserInfo {
         this.openId = openId;
     }
 
+    /**
+     * 解密UserInfo
+     *
+     * @param encryptedData 加密数据
+     * @param iv 算法初始向量
+     * @param openId openId
+     * @return jsonObject
+     */
     public JSONObject decodeUserInfo(String encryptedData, String iv, String openId) {
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>(3);
         try {
             String result = AesUtil.decrypt(encryptedData, userRepository.getKeyByOpenId(openId), iv, "UTF-8");
             if (null != result && result.length() > 0) {
-                map.put("status", 1);
-                map.put("msg", "解密成功");
+
                 JSONObject userInfoJSON = JSONObject.fromObject(result);
-                Map<String, Object> userInfo = new HashMap<>();
-                userInfo.put("openId", userInfoJSON.get("openId"));
+
+                String openIdDecode = userInfoJSON.getString("openId");
+                //登录的openId与解密出的openId不一致，加入黑名单
+                if(!openIdDecode.equals(openId)) {
+                    userRepository.insertBlacklist(openId, "登录的openId与解密出的openId不一致");
+
+                    map.put("status", 2);
+                    map.put("msg", "解密失败");
+                    return JSONObject.fromObject(map);
+                }
+                //解密出来的水印
+                JSONObject watermark = userInfoJSON.getJSONObject("watermark");
+                String appId = watermark.getString("appid");
+                //配置文件中的appid
+                String appIdConfig = WxConfigs.getProperties("appId");
+                if(!appId.equals(appIdConfig)) {
+                    userRepository.insertBlacklist(openId, "解密出的appid不是配置文件中的appid");
+
+                    map.put("status", 3);
+                    map.put("msg", "解密失败");
+                    return JSONObject.fromObject(map);
+                }
+
+                Map<String, Object> userInfo = new HashMap<>(8);
+                userInfo.put("openId", openIdDecode);
                 //保存openId
                 setOpenId(userInfoJSON.getString("openId"));
                 userInfo.put("nickName", userInfoJSON.get("nickName"));
@@ -49,7 +82,8 @@ public class GetUserInfo {
 ///                userInfo.put("unionId", userInfoJSON.get("unionId"));
                 map.put("userInfo", userInfo);
 
-                System.out.println(map);
+                map.put("status", 1);
+                map.put("msg", "解密成功");
 
                 return JSONObject.fromObject(map);
             }
@@ -58,6 +92,7 @@ public class GetUserInfo {
         }
         map.put("status", 0);
         map.put("msg", "解密失败");
+
         return JSONObject.fromObject(map);
     }
 }

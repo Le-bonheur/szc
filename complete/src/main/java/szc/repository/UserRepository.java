@@ -21,6 +21,12 @@ public class UserRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    /**
+     * 更新SESSION_KEY
+     *
+     * @param code 登录凭证
+     * @param sessionKey 会话密钥
+     */
     @Transactional(rollbackFor = RuntimeException.class)
     public void updateSessionKey(String code, String sessionKey) {
         int updateRows = jdbcTemplate.update(SqlSet.UPDATE_SESSION_KEY, code, sessionKey);
@@ -29,6 +35,12 @@ public class UserRepository {
         }
     }
 
+    /**
+     * 通过openId查询返回session_key
+     *
+     * @param openId openId
+     * @return session_key
+     */
     public String getKeyByOpenId(String openId) {
         List<String> result = jdbcTemplate.query(SqlSet.QUERY_SESSION_KEY_BY_ID,
                 (rs, rowNum) -> rs.getString("SESSION_KEY"), openId);
@@ -38,6 +50,16 @@ public class UserRepository {
         } else {
             return result.get(0);
         }
+    }
+
+    /**
+     * 插入黑名单
+     *
+     * @param openId openId
+     * @param type 类型
+     */
+    public void insertBlacklist(String openId, String type) {
+        jdbcTemplate.update(SqlSet.INSERT_BLACKLIST, openId, type);
     }
 
 }

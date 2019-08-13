@@ -9,6 +9,9 @@ import szc.wx_interfaces.GetUserInfo;
 
 import java.util.Map;
 
+/**
+ * @author Lebonheur
+ */
 @Service
 public class UserService {
 
@@ -25,8 +28,14 @@ public class UserService {
         this.getUserInfo = getUserInfo;
     }
 
+
+    /**
+     * @param code 登录凭证
+     * @return openId
+     */
     public String getOpenIdByCode(String code) {
         Map map = getOpenIdByCode.getOpenIdByCode(code);
+
         String openId = map.get("openId").toString();
         String sessionKey = map.get("session_key").toString();
         System.out.println(openId);
@@ -35,6 +44,14 @@ public class UserService {
         return openId;
     }
 
+    /**
+     * 对UserInfo解密
+     *
+     * @param encryptedData 加密数据
+     * @param iv 算法初始向量
+     * @param openId openId
+     * @return userInfo
+     */
     public JSONObject decodeUserInfo(String encryptedData, String iv, String openId) {
         return getUserInfo.decodeUserInfo(encryptedData, iv, openId);
     }

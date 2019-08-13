@@ -19,4 +19,8 @@ public class SqlSet {
     @Language("Oracle")
     public static final String QUERY_SESSION_KEY_BY_ID = " SELECT SESSION_KEY FROM TCS.USER_SESSION_KEY WHERE OPEN_ID = ? ";
 
+    @Language("Oracle")
+    public static final String INSERT_BLACKLIST = " INSERT INTO TCS.USER_BLACKLIST (OPEN_ID, CUR_TIME, TYPES) " +
+                                                  " VALUES (?, TO_CHAR(SYSTIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'), ?) ";
+
 }
