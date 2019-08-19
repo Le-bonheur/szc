@@ -1,4 +1,4 @@
-package szc.sql;
+package com.ssc.szc.sql;
 
 import org.intellij.lang.annotations.Language;
 

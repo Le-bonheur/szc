@@ -1,9 +1,9 @@
-package szc.wx_interfaces;
+package com.ssc.szc.wx_interfaces;
 
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import szc.repository.UserRepository;
+import com.ssc.szc.repository.UserRepository;
 
 import java.util.HashMap;
 import java.util.Map;

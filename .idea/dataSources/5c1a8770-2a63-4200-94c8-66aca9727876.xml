@@ -104,9 +104,9 @@
     </schema>
     <schema id="33" parent="1" name="TCS">
       <ObjectId>96</ObjectId>
-      <IntrospectionTimestamp>2019-08-14.00:08:00</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-08-16.01:43:26</IntrospectionTimestamp>
       <CreatedTimestamp>2019-08-12.06:21:16</CreatedTimestamp>
-      <ModifiedTimestamp>2019-08-14.00:07:58</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-08-16.01:43:15</ModifiedTimestamp>
       <Visible>1</Visible>
     </schema>
     <schema id="34" parent="1" name="DEV">
@@ -127,57 +127,121 @@
       <CreatedTimestamp>2019-08-10.02:39:37</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-10.02:39:37</ModifiedTimestamp>
     </collection-type>
-    <table id="37" parent="33" name="USER_BLACKLIST">
+    <table id="37" parent="33" name="USERS_INFO">
+      <ObjectId>75831</ObjectId>
+      <CreatedTimestamp>2019-08-16.01:43:14</CreatedTimestamp>
+      <ModifiedTimestamp>2019-08-16.01:43:14</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="38" parent="33" name="USER_BLACKLIST">
       <ObjectId>75673</ObjectId>
       <CreatedTimestamp>2019-08-14.00:00:54</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-14.00:07:58</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="38" parent="33" name="USER_SESSION_KEY">
+    <table id="39" parent="33" name="USER_SESSION_KEY">
       <ObjectId>75514</ObjectId>
       <CreatedTimestamp>2019-08-12.06:21:16</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-13.00:32:31</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="39" parent="34" name="BLK_FLG_PID_T">
+    <table id="40" parent="34" name="BLK_FLG_PID_T">
       <ObjectId>75117</ObjectId>
       <CreatedTimestamp>2019-08-06.23:00:50</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-10.03:15:44</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <object-type id="40" parent="34" name="CLT_PID">
+    <object-type id="41" parent="34" name="CLT_PID">
       <ObjectId>75355</ObjectId>
       <CreatedTimestamp>2019-08-10.02:12:24</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-10.02:12:24</ModifiedTimestamp>
       <Final>1</Final>
       <Instantiable>1</Instantiable>
     </object-type>
-    <routine id="41" parent="34" name="QRY_PID_01">
+    <routine id="42" parent="34" name="QRY_PID_01">
       <ObjectId>75276</ObjectId>
       <RoutineKind>procedure</RoutineKind>
-      <DependsOnIds>75117,4763</DependsOnIds>
+      <DependsOnIds>4763,75117</DependsOnIds>
       <CreatedTimestamp>2019-08-09.00:36:24</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-10.03:16:25</ModifiedTimestamp>
     </routine>
-    <column id="42" parent="37" name="OPEN_ID">
+    <column id="43" parent="37" name="OPEN_ID">
       <Position>1</Position>
       <DataType>VARCHAR2(28 byte)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos; &apos; </DefaultExpression>
     </column>
-    <column id="43" parent="37" name="CUR_TIME">
+    <column id="44" parent="37" name="NICK_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <DefaultExpression>NULL</DefaultExpression>
+    </column>
+    <column id="45" parent="37" name="AVATAR_URL">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+      <DefaultExpression>NULL</DefaultExpression>
+    </column>
+    <column id="46" parent="37" name="GENDER">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="47" parent="37" name="COUNTRY">
+      <Position>5</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <DefaultExpression>NULL</DefaultExpression>
+    </column>
+    <column id="48" parent="37" name="PROVICE">
+      <Position>6</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <DefaultExpression>NULL </DefaultExpression>
+    </column>
+    <column id="49" parent="37" name="CITY">
+      <Position>7</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+      <DefaultExpression>NULL </DefaultExpression>
+    </column>
+    <column id="50" parent="37" name="LANGUAGE">
+      <Position>8</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+      <DefaultExpression>NULL 
+</DefaultExpression>
+    </column>
+    <index id="51" parent="37" name="SYS_C0010868">
+      <ObjectId>75832</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-08-16.01:43:15</CreatedTimestamp>
+      <ModifiedTimestamp>2019-08-16.01:43:15</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>OPEN_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="37" name="SYS_C0010868">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-08-16.01:43:15</ModifiedTimestamp>
+      <ColNames>OPEN_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0010868</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="38" name="OPEN_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR2(28 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos; &apos;</DefaultExpression>
+    </column>
+    <column id="54" parent="38" name="CUR_TIME">
       <Position>2</Position>
       <DataType>VARCHAR2(19 byte)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos; &apos; </DefaultExpression>
+      <DefaultExpression>&apos; &apos;</DefaultExpression>
     </column>
-    <column id="44" parent="37" name="TYPES">
+    <column id="55" parent="38" name="TYPES">
       <Position>3</Position>
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos; &apos;</DefaultExpression>
     </column>
-    <index id="45" parent="37" name="SYS_C0010866">
+    <index id="56" parent="38" name="SYS_C0010866">
       <ObjectId>75674</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-08-14.00:00:54</CreatedTimestamp>
@@ -186,7 +250,7 @@
       <ColNames>OPEN_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="46" parent="37" name="SYS_C0010866">
+    <key id="57" parent="38" name="SYS_C0010866">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-08-14.00:00:54</ModifiedTimestamp>
       <ColNames>OPEN_ID</ColNames>
@@ -194,19 +258,19 @@
       <UnderlyingIndexName>SYS_C0010866</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="47" parent="38" name="OPEN_ID">
+    <column id="58" parent="39" name="OPEN_ID">
       <Position>1</Position>
       <DataType>VARCHAR2(28 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>NULL</DefaultExpression>
     </column>
-    <column id="48" parent="38" name="SESSION_KEY">
+    <column id="59" parent="39" name="SESSION_KEY">
       <Position>2</Position>
       <DataType>VARCHAR2(24 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>NULL</DefaultExpression>
     </column>
-    <index id="49" parent="38" name="SYS_C0010862">
+    <index id="60" parent="39" name="SYS_C0010862">
       <ObjectId>75515</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-08-12.06:21:17</CreatedTimestamp>
@@ -215,7 +279,7 @@
       <ColNames>OPEN_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="50" parent="38" name="USER_SESSION_KEY_UINDEX">
+    <index id="61" parent="39" name="USER_SESSION_KEY_UINDEX">
       <ObjectId>75516</ObjectId>
       <CreatedTimestamp>2019-08-12.06:23:15</CreatedTimestamp>
       <ModifiedTimestamp>2019-08-12.06:23:15</ModifiedTimestamp>
@@ -223,7 +287,7 @@
       <ColNames>SESSION_KEY</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="51" parent="38" name="SYS_C0010862">
+    <key id="62" parent="39" name="SYS_C0010862">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-08-12.06:21:17</ModifiedTimestamp>
       <ColNames>OPEN_ID</ColNames>
@@ -231,23 +295,23 @@
       <UnderlyingIndexName>SYS_C0010862</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="52" parent="39" name="CBI_CLT_PID">
+    <column id="63" parent="40" name="CBI_CLT_PID">
       <Position>1</Position>
       <DataType>NVARCHAR2(100 char)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>NULL</DefaultExpression>
     </column>
-    <column id="53" parent="39" name="CBI_CLT_NAME">
+    <column id="64" parent="40" name="CBI_CLT_NAME">
       <Position>2</Position>
       <DataType>NVARCHAR2(20 char)|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos; &apos; </DefaultExpression>
+      <DefaultExpression>&apos; &apos;</DefaultExpression>
     </column>
-    <object-attribute id="54" parent="40" name="CLT_PID">
+    <object-attribute id="65" parent="41" name="CLT_PID">
       <Position>1</Position>
       <DataType>VARCHAR2|0s</DataType>
     </object-attribute>
-    <argument id="55" parent="41" name="O_PIDCUSOR">
+    <argument id="66" parent="42" name="O_PIDCUSOR">
       <Position>1</Position>
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>REF CURSOR|0s</DataType>

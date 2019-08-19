@@ -1,4 +1,4 @@
-package szc.wx_interfaces;
+package com.ssc.szc.wx_interfaces;
 
 import org.apache.commons.codec.binary.Base64;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;

@@ -1,4 +1,4 @@
-package szc.controller;
+package com.ssc.szc.controller;
 
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import szc.service.UserService;
+import com.ssc.szc.services.user.UserService;
 
+/**
+ * @author Lebonheur
+ */
 @Controller
 @RequestMapping(path = "/user")
 public class UserController {

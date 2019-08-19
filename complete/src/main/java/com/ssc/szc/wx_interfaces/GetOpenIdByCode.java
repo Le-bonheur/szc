@@ -1,4 +1,4 @@
-package szc.wx_interfaces;
+package com.ssc.szc.wx_interfaces;
 
 import net.sf.json.JSONObject;
 import org.apache.http.HttpEntity;

@@ -1,10 +1,10 @@
-package szc.repository;
+package com.ssc.szc.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import szc.sql.SqlSet;
+import com.ssc.szc.sql.SqlSet;
 
 import java.util.List;
 

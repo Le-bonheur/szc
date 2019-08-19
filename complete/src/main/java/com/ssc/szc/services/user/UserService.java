@@ -1,11 +1,11 @@
-package szc.service;
+package com.ssc.szc.services.user;
 
+import com.ssc.szc.repository.UserRepository;
+import com.ssc.szc.wx_interfaces.GetOpenIdByCode;
+import com.ssc.szc.wx_interfaces.GetUserInfo;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import szc.repository.UserRepository;
-import szc.wx_interfaces.GetOpenIdByCode;
-import szc.wx_interfaces.GetUserInfo;
 
 import java.util.Map;
 

@@ -1,13 +1,13 @@
-package szc.controller;
+package com.ssc.szc.controller;
 
 import java.util.Base64;
 import java.util.concurrent.atomic.AtomicLong;
 
-import szc.entity.Greeting;
+import com.ssc.szc.repository.GreetingRepository;
+import com.ssc.szc.entity.Greeting;
 import net.sf.json.JSONArray;
 import org.apache.commons.codec.Charsets;
 import org.springframework.web.bind.annotation.*;
-import szc.repository.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController

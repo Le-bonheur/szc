@@ -1,4 +1,4 @@
-package szc.repository;
+package com.ssc.szc.repository;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -11,8 +11,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.CallableStatement;
-import java.util.*;
+import java.util.Base64;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
+/**
+ * @author Lebonheur
+ */
 @Component
 public class GreetingRepository {
 

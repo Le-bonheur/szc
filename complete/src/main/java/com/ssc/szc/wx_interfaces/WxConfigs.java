@@ -1,4 +1,4 @@
-package szc.wx_interfaces;
+package com.ssc.szc.wx_interfaces;
 
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 

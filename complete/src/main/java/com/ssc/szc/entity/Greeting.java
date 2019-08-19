@@ -1,4 +1,4 @@
-package szc.entity;
+package com.ssc.szc.entity;
 
 public class Greeting {
 
