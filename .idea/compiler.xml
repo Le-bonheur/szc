@@ -6,13 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gs-rest-service (1)" />
-        <module name="gs-rest-service (2)" />
+        <module name="szc-app" />
+        <module name="szc-commons" />
+        <module name="szc-starter-persistence" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gs-rest-service (1)" target="9" />
       <module name="gs-rest-service (2)" target="1.8" />
+      <module name="szc-app" target="9" />
+      <module name="szc-app (1)" target="1.8" />
+      <module name="szc-commons" target="1.8" />
+      <module name="szc-commons (1)" target="1.8" />
+      <module name="szc-starter-parent" target="1.8" />
+      <module name="szc-starter-persistence" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

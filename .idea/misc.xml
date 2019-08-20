@@ -7,8 +7,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/complete/pom.xml" />
-        <option value="$PROJECT_DIR$/initial/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-app/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-starter-parent/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/szc-starter-parent/szc-app/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-starter-parent/szc-commons/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="9" project-jdk-type="JavaSDK" />

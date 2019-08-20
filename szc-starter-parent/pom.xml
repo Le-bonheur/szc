@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath />
+    </parent>
+
+    <groupId>SSC</groupId>
+    <artifactId>szc-starter-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>../szc-commons</module>
+        <module>../szc-persistence</module>
+    </modules>
+
+    <properties>
+
+        <project.build.sourceEncoding>UTD-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
+        <!-- 外部依赖组件版本号列表 -->
+        <spring.cloud.version>Edgware.RELEASE</spring.cloud.version>
+        <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
+        <mybatis-spring-boot.version>2.0.1</mybatis-spring-boot.version>
+        <quartz.version>2.3.0</quartz.version>
+
+        <!-- 子模块版本号列表 -->
+        <szc-commons.version>1.0.0</szc-commons.version>
+        <szc-starter-persistence.version>1.0.0</szc-starter-persistence.version>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${quartz.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>SSC</groupId>
+                <artifactId>szc-commons</artifactId>
+                <version>${szc-commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>SSC</groupId>
+                <artifactId>szc-starter-persistence</artifactId>
+                <version>${szc-starter-persistence.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

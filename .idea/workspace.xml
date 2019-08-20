@@ -1,39 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d2efd2-4c4e-44b2-b9d1-441a47a26a05" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/WTFService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c1a8770-2a63-4200-94c8-66aca9727876.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c1a8770-2a63-4200-94c8-66aca9727876.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c1a8770-2a63-4200-94c8-66aca9727876/storage_v2/_src_/schema/TCS.xEMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c1a8770-2a63-4200-94c8-66aca9727876/storage_v2/_src_/schema/TCS.xEMBAA.meta" afterDir="false" />
+    <list default="true" id="76d2efd2-4c4e-44b2-b9d1-441a47a26a05" name="Default" comment="111">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5c1a8770-2a63-4200-94c8-66aca9727876/storage_v2/_src_/schema/DEV.9QcBAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_jul_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/manifest.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/entity/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/repository/GreetingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/services/WTFService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/services/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/sql/SqlSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/wx_interfaces/AesUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/wx_interfaces/GetOpenIdByCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/wx_interfaces/GetUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/wx_interfaces/WxConfigs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/java/com/ssc/szc/app/zz1dbc/ZZ1DBC_DBCnnPolCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/main/resources/wx.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-app/src/test/java/com/ssc/szc/app/GreetingControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-commons/szc-commons.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/DataSourceInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/config/MutiDataSourceCustomerPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/datasource/DataSourceConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/mybatis/customer/ThrowableConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/mybatis/customer/annotation/CustomerBeanBindTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-persistence/szc-starter-persistence.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-starter-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szc-starter-parent/szc-starter-parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j2_2_1_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j2_2_1_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/complete/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/gs-rest-service (1).iml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/gs-rest-service (1).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/manifest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/manifest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/complete/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/entity/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/entity/Greeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/repository/GreetingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/GreetingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/sql/SqlSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/sql/SqlSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/wx_interfaces/AesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/AesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/wx_interfaces/GetOpenIdByCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetOpenIdByCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/wx_interfaces/GetUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetUserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/wx_interfaces/WxConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/WxConfigs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/main/java/szc/zz1dbc/ZZ1DBC_DBCnnPolCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/zz1dbc/ZZ1DBC_DBCnnPolCfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/complete/src/test/java/szc/GreetingControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/test/java/com/ssc/szc/GreetingControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initial/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/initial/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initial/src/main/java/szc/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/initial/src/main/java/com/ssc/szc/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push-to-pws/button.yml" beforeDir="false" afterPath="$PROJECT_DIR$/push-to-pws/button.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/manifest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/entity/Greeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/GreetingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/WTFService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/sql/SqlSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/AesUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetOpenIdByCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetUserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/WxConfigs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/zz1dbc/ZZ1DBC_DBCnnPolCfg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/resources/wx.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/test/java/com/ssc/szc/GreetingControllerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/test/test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/szc-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/target/classes/wx.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/gs-rest-service (2).iml" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/szc-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial/src/main/java/com/ssc/szc/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/szc-app/src/test/test.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/complete/target/" />
     <ignored path="$PROJECT_DIR$/initial/target/" />
+    <ignored path="$PROJECT_DIR$/szc-commons/target/" />
+    <ignored path="$PROJECT_DIR$/szc-app/target/" />
+    <ignored path="$PROJECT_DIR$/szc-persistence/target/" />
+    <ignored path="$PROJECT_DIR$/szc-starter-parent/target/" />
+    <ignored path="$PROJECT_DIR$/szc-starter-parent/szc-app/target/" />
+    <ignored path="$PROJECT_DIR$/szc-starter-parent/szc-commons/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,62 +174,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/UserRepository.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/szc-commons/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complete/pom.xml">
+        <entry file="file://$PROJECT_DIR$/szc-app/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlSet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/sql/SqlSet.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/szc-starter-parent/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="494">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreetingRepository.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/GreetingRepository.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/szc-persistence/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="450">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MutiDataSourceCustomerPostProcessor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/config/MutiDataSourceCustomerPostProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4859#4860#0" expanded="true" />
+                <element signature="e#4883#4884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/UserService.java">
+      <file leaf-file-name="DataSourceConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/datasource/DataSourceConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WTFService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/WTFService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,6 +251,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -215,8 +303,19 @@
         <option value="$PROJECT_DIR$/complete/pom.xml" />
         <option value="$PROJECT_DIR$/complete/src/main/java/szc/repository/GreetingRepository.java" />
         <option value="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/GreetingRepository.java" />
-        <option value="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/UserController.java" />
         <option value="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/UserService.java" />
+        <option value="$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/szc-starter-parent/szc-app/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-starter-parent/szc-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-app/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/DataSourceInitializer.java" />
+        <option value="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/mybatis/customer/annotation/CustomerBeanBindTo.java" />
+        <option value="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/mybatis/customer/ThrowableConsumer.java" />
+        <option value="$PROJECT_DIR$/szc-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/datasource/DataSourceConsumer.java" />
+        <option value="$PROJECT_DIR$/szc-starter-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/config/MutiDataSourceCustomerPostProcessor.java" />
       </list>
     </option>
   </component>
@@ -235,17 +334,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="gs-rest-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="gs-rest-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -264,8 +353,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,67 +365,111 @@
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
+              <item name="push-to-pws" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szc" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="szc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="complete" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
               <item name="szc" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szc" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="datasource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szc" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szc" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szc" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="szc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="szc" type="462c0819:PsiDirectoryNode" />
+              <item name="szc-starter-parent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -357,8 +490,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -410,7 +543,7 @@
       <patterns />
     </configuration>
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gs-rest-service (1)" />
+      <module name="szc-app" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ssc.szc.*" />
@@ -419,8 +552,12 @@
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ssc.szc.Application" />
     </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="szc-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ssc.szc.app.Application" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gs-rest-service (1)" />
+      <module name="szc-app" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="szc.entity.*" />
@@ -452,6 +589,7 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.Application (2)" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.Application (1)" />
     </list>
@@ -477,7 +615,8 @@
       <updated>1565077021463</updated>
       <workItem from="1565077022886" duration="51886000" />
       <workItem from="1565857666422" duration="158000" />
-      <workItem from="1565857857705" duration="2666000" />
+      <workItem from="1565857857705" duration="10287000" />
+      <workItem from="1566290040006" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1565257344217</created>
@@ -507,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565688852047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="111">
+      <created>1566199188710</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566199188710</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54710000" />
+    <option name="totallyTimeSpent" value="65008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -523,27 +669,25 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Docker" order="2" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.2167382" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2167382" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="17" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32969698" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="bottom" id="Run" order="12" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="12" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969698" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32969698" />
       <window_info anchor="bottom" id="SQL" order="5" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2067239" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.21173105" />
       <window_info anchor="right" id="Bean Validation" order="0" weight="0.3297568" />
       <window_info id="Web" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="6" />
-      <window_info anchor="bottom" id="Find" order="11" weight="0.32969698" />
       <window_info id="Alibaba Cloud Explorer" order="0" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -551,11 +695,12 @@
       <window_info anchor="bottom" id="Cvs" order="15" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="1" weight="0.32969698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32969698" />
+      <window_info anchor="bottom" id="Find" order="11" weight="0.32969698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="bottom" id="Spring" order="0" />
@@ -566,7 +711,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -580,6 +725,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Alibaba Cloud Explorer" order="0" weight="0.3297568" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.29899856" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="6" />
       <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.2532189" />
       <window_info anchor="right" id="Database" order="4" weight="0.2167382" />
@@ -606,177 +752,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="111" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11.jar!/org/apache/commons/codec/Charsets.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11-sources.jar!/org/apache/commons/codec/CharEncoding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11-sources.jar!/org/apache/commons/codec/Charsets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="166" column="72" lean-forward="true" selection-start-line="166" selection-start-column="72" selection-end-line="166" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Base64.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="547" column="22" selection-start-line="547" selection-start-column="22" selection-end-line="547" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.8.RELEASE/spring-jdbc-5.1.8.RELEASE-sources.jar!/org/springframework/jdbc/core/CallableStatementCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.sql/java/sql/CallableStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3145">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.8.RELEASE/spring-jdbc-5.1.8.RELEASE-sources.jar!/org/springframework/jdbc/core/SqlOutParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.8.RELEASE/spring-jdbc-5.1.8.RELEASE-sources.jar!/org/springframework/jdbc/core/SqlParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="186" column="43" lean-forward="true" selection-start-line="186" selection-start-column="43" selection-end-line="186" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c1a8770-2a63-4200-94c8-66aca9727876/schema/DEV/object-type/CLT_PID">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c1a8770-2a63-4200-94c8-66aca9727876/schema/DEV/collection-type/CLT_PID_ARRAY" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.sql/java/sql/Types.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="119" column="3" lean-forward="true" selection-start-line="119" selection-start-column="3" selection-end-line="119" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/10.2.0.1/ojdbc6-10.2.0.1.jar!/oracle/jdbc/OracleTypes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbSrc:///8e3a1329/5c1a8770-2a63-4200-94c8-66aca9727876/schema/DEV/routine/QRY_PID_01.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5c1a8770-2a63-4200-94c8-66aca9727876/schema/DEV/table/BLK_FLG_PID_T">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ROWID" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/test/test.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="1966" column="19" selection-start-line="1966" selection-start-column="19" selection-end-line="1966" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-el/9.0.21/tomcat-embed-el-9.0.21.jar!/org/apache/el/stream/Stream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-el/9.0.21/tomcat-embed-el-9.0.21-sources.jar!/org/apache/el/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar!/net/sf/json/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="4814" column="7" lean-forward="true" selection-start-line="4814" selection-start-column="7" selection-end-line="4814" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/GreetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/szc/utils.java" />
     <entry file="file://$PROJECT_DIR$/complete/src/main/java/szc/repository/GreetingRepo.java" />
     <entry file="file://$PROJECT_DIR$/complete/src/main/java/szc/sql.java" />
-    <entry file="file://$PROJECT_DIR$/complete/src/main/resources/wx.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/complete/src/main/resources/wx.properties" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/resources/application.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.8.RELEASE/spring-jdbc-5.1.8.RELEASE-sources.jar!/org/springframework/jdbc/core/RowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -805,23 +784,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/AesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetOpenIdByCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/AesUtil.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetOpenIdByCode.java" />
     <entry file="das://5c1a8770-2a63-4200-94c8-66aca9727876/schema/TCS/table/USER_SESSION_KEY">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -829,37 +793,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/WxConfigs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/WxConfigs.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/wx_interfaces/GetUserInfo.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5c1a8770-2a63-4200-94c8-66aca9727876/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,70 +819,12 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar!/scala/Tuple2.scala">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/complete/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/sql/SqlSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/zz1dbc/ZZ1DBC_DBCnnPolCfg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/WtkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/WTFService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/sql/SqlSet.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/Application.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/zz1dbc/ZZ1DBC_DBCnnPolCfg.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/WtkService.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/WTFService.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/services/user/UserService.java" />
     <entry file="das://5c1a8770-2a63-4200-94c8-66aca9727876/schema/TCS/table/USER_BLACKLIST">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -951,12 +832,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/GreetingRepository.java">
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/entity/User.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/GreetingRepository.java" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/repository/UserRepository.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/bind/annotation/RestController.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="195">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/complete/src/main/java/com/ssc/szc/controller/UserController.java" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-parent/2.1.6.RELEASE/spring-boot-starter-parent-2.1.6.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-957" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/complete/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/szc-starter-parent/szc-app/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/szc-starter-parent/szc-commons/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/T.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar!/org/springframework/core/env/PropertyResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/context/ContextLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="409" column="49" selection-start-line="409" selection-start-column="49" selection-end-line="409" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ApplicationContextInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/mybatis/customer/annotation/CustomerBeanBindTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/DataSourceInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/datasource/DataSourceConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/ObjectProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="486" column="36" selection-start-line="486" selection-start-column="36" selection-end-line="486" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar!/org/springframework/core/Ordered.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-starter-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-persistence/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/mybatis/customer/ThrowableConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1.jar!/org/apache/ibatis/session/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="717" column="16" selection-start-line="717" selection-start-column="16" selection-end-line="717" selection-end-column="16" />
+          <folding>
+            <element signature="e#26596#26597#0" expanded="true" />
+            <element signature="e#26661#26662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/szc-persistence/src/main/java/com/ssc/szc/persistence/autoconfig/config/MutiDataSourceCustomerPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4859#4860#0" expanded="true" />
+            <element signature="e#4883#4884#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -964,6 +986,30 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <last-edited>highcharts</last-edited>
@@ -988,6 +1034,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>szc-starter-persistence</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>9</last-edited>
@@ -1002,6 +1061,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

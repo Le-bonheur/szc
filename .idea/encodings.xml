@@ -3,5 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/complete" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/initial" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szc-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szc-starter-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szc-starter-parent/szc-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szc-starter-parent/szc-commons" charset="UTF-8" />
   </component>
 </project>
