@@ -22,6 +22,7 @@ public class DataSourceInitializer implements ApplicationContextInitializer<Conf
         String propertySourceName = "szcFrameworkAutoconfigExcludes";
         String toBeExcludes = "org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration," +
                 "org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration";
+        //TODO
         if(!environment.getProperty("szc.enablePersistence", Boolean.class, Boolean.TRUE)) {
             toBeExcludes = "ssc.szc.persistence.autoconfig.PersistenceAutoConfiguration";
         }
